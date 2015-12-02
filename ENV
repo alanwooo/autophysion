@@ -1,0 +1,27 @@
+# Cobbler server
+export cobbler_server=x.x.x.x
+export cobbler_passwd=xxxxx
+
+export PHYMACHINE=./phymachine.conf
+export TESTCASES=./testcase.conf
+
+# TESTHOST password
+export TESTHOSTInitPasswd=1234
+
+# TESTHOST root password after install
+export TESTHOSTNewPasswd=qwerasdf1234
+
+# Necessary kernel patameter
+# Password:entryption ${TESTHOSTInitPasswd}:yXFwtc1u1oofs
+export TESTHOSTKernelBasedArg="rootpw=yXFwtc1u1oofs ssh_pwauth=1 firstboot"
+
+# Send email
+export MAILTO=xxx@xxxxx.com
+export MAILCC=xxx@xxxxx.com
+
+# Case log
+export TESTCASELOG=/tmp/testcase_log
+
+# Control server
+export MasterServer=x.x.x.x
+export MasterSerPort=xxxx
